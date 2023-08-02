@@ -11,25 +11,34 @@
         android:layout_height="match_parent"
         android:padding="16dp">
 
-        <Button
-            android:id="@+id/button_first"
-            android:layout_width="wrap_content"
+        <EditText
+            android:id="@+id/usario"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/next"
-            app:layout_constraintBottom_toTopOf="@id/textview_first"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            android:hint="Ingrese su usuario"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="216dp" />
 
-        <TextView
-            android:id="@+id/textview_first"
-            android:layout_width="wrap_content"
+        <EditText
+            android:id="@+id/clave"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:text="@string/lorem_ipsum"
-            app:layout_constraintBottom_toBottomOf="parent"
+            android:hint="clave"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="306dp" />
+
+        <Button
+            android:id="@+id/calculate_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/ingresar"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.843"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/button_first" />
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteY="474dp" />
+
+        <!-- app:layout_constraintBottom_toTopOf="@id/textview_first" -->
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.core.widget.NestedScrollView>
