@@ -17,7 +17,8 @@
             android:layout_height="wrap_content"
             android:hint="Ingrese su usuario"
             tools:layout_editor_absoluteX="16dp"
-            tools:layout_editor_absoluteY="216dp" />
+            tools:layout_editor_absoluteY="216dp"
+            tools:ignore="MissingConstraints" />
 
         <EditText
             android:id="@+id/clave"
@@ -25,10 +26,11 @@
             android:layout_height="wrap_content"
             android:hint="clave"
             tools:layout_editor_absoluteX="16dp"
-            tools:layout_editor_absoluteY="306dp" />
+            tools:layout_editor_absoluteY="306dp"
+            tools:ignore="MissingConstraints" />
 
         <Button
-            android:id="@+id/calculate_button"
+            android:id="@+id/ingresar"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:text="@string/ingresar"
